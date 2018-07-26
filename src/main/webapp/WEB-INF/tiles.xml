@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+ 
+<tiles-definitions>
+ 
+	<definition name="app.default" template="/WEB-INF/layouts/baseLayout.jsp">
+		<put-attribute name="title" value="Demo Page" />
+		<put-attribute name="header" value="/WEB-INF/tiles/header.jsp" />
+		<put-attribute name="leftMenu" value="/WEB-INF/tiles/leftMenu.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/footer.jsp" />
+	</definition>
+	
+	
+	<definition name="app.welcome" extends="app.default">
+		<put-attribute name="body" value="/WEB-INF/view/welcome.jsp" />
+	</definition>
+ 
+	<!-- <definition name="app.user" extends="app.default">
+		<put-attribute name="body" value="/WEB-INF/view/user.jsp" />
+	</definition> -->
+	
+	<definition name="patientDetails" extends="app.default">
+		<put-attribute name="body" value="/WEB-INF/view/patientDetails.jsp" />
+	</definition>
+	
+	<definition name="sample" extends="app.default">
+		<put-attribute name="body" value="/WEB-INF/view/sample.jsp" />
+	</definition>
+	<definition name="complicationsDetails" extends="app.default">
+		<put-attribute name="body" value="/WEB-INF/view/complicationsDetails.jsp" />
+	</definition>
+	<definition name="patientComplicationDetails" extends="app.default">
+		<put-attribute name="body" value="/WEB-INF/view/patientComplicationDetails.jsp" />
+	</definition>
+	 
+</tiles-definitions>
